@@ -13,7 +13,7 @@ green	= "\033[0;32;40m"
 white	= "\033[0;37;40m"
 yellow  = "\033[0;33;40m"
 
-stats_format = white+"Stats: views :"+green+"{:^3}"+white+", errors: "+read+"{:^3}"+white+", fails: "+yellow+"{:^3}\r"
+stats_format = "\r"+white+"Stats: views :"+green+"{:^3}"+white+", errors: "+read+"{:^3}"+white+", fails: "+yellow+"{:^3}"
 
 # params
 curr_proxy = 0
