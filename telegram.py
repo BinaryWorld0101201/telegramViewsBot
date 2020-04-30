@@ -108,7 +108,6 @@ def main():
 
 	try:
 		proxies = proxylist.proxylist(filename=filename, proxy_type=int(proxy_type))
-		print(len(proxies))
 		nthreads = input('>>> Threads(1-200): ')
 
 		tm = threadManager.ThreadManager(worker, nthreads=int(nthreads), args=(postLink,))
