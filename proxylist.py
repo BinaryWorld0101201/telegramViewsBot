@@ -11,9 +11,9 @@ class Proxy():
 
 	def get(self):
 		if self.ptype == ptSocks4:
-			prefix = "socks4//:"
+			prefix = "socks4://"
 		elif self.ptype == ptSocks5:
-			prefix = "socks5//:"
+			prefix = "socks5://"
 		else:
 			prefix = "http://"
 		return (prefix+self.proxy)
