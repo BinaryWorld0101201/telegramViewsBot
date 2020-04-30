@@ -7,4 +7,5 @@ python3 telegram.py
 
 # Setup
 pip install requests
+
 pip install -U requests[socks]
