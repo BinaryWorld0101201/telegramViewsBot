@@ -36,7 +36,7 @@ class proxylist(list):
 		if not len(filename):
 			return
 
-		fp    = open(filename, "r")
+		fp    = open(filename, "rU")
 		lines = fp.readlines()
 		fp.close()
 
