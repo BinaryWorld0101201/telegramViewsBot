@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import threadManager
 import proxylist
 import threading
