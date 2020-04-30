@@ -100,9 +100,9 @@ def main():
 	global proxies
 	postLink   = input('>>> Enter telegram channel post link: ')
 	# get proxies
-	proxy_type = input('[1] Http\n[2] Socks4\n[3] Socks5\n>>> Enter proxy type:')
-	while not ('1'<= proxy_type <= '3'):
-		proxy_type = input('[1] Http\n[2] Socks4\n[3] Socks5\n>>> Enter proxy type:')
+	proxy_type = input('[0] Http\n[1] Socks4\n[2] Socks5\n>>> Enter proxy type:')
+	while not ('0'<= proxy_type <= '2'):
+		proxy_type = input('[0] Http\n[1] Socks4\n[2] Socks5\n>>> Enter proxy type:')
 
 	filename = input('Enter proxies path: ')
 	filename = filename.replace("'", "")
