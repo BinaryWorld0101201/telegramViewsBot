@@ -88,7 +88,9 @@ def worker(post_link):
 				fails += 1
 		except:
 			errors	      += 1
-
+		# free sess
+		del sess
+		# next proxy
 		lock.acquire()
 		curr_proxy += 1
 
