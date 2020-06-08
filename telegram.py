@@ -60,8 +60,10 @@ def worker(post_link):
 	global curr_proxy
 	global lock
 
+        sess = requests.session()
+
 	while True:
-		sess = requests.session()
+
 		try:
 			link = '{}{}'.format(post_link, '?embed=1')
 			proxy = {
@@ -88,8 +90,8 @@ def worker(post_link):
 				fails += 1
 		except:
 			errors	      += 1
-		# free sess
-		del sess
+
+
 		# next proxy
 		lock.acquire()
 		curr_proxy += 1
