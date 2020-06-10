@@ -34,4 +34,4 @@ class ThreadManager():
 		if self._running:
 			self._stop()
 		else:
-                        raise Exception ("Can't stop a non running threads")
+                        raise Exception("Can't stop a non running threads")
