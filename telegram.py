@@ -8,10 +8,10 @@ import re
 import sys
 
 # colors
-read 	= "\033[0;31m"
-green	= "\033[0;32m"
-white	= "\033[0;37m"
-yellow  = "\033[0;33m"
+read 	= "\033[31m"
+green	= "\033[32m"
+white	= "\033[37m"
+yellow  = "\033[33m"
 
 stats_format = white+"Stats: views :"+green+"{:^3}"+white+", errors: "+read+"{:^3}"+white+", fails: "+yellow+"{:^3}\r"
 
