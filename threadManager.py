@@ -24,15 +24,14 @@ class ThreadManager():
 		del self._Threads
 
 	def start(self):
-		try:
-			self._create_threads()
-			self._run()
-		except Exception as e:
-			print(str(e))
+                if not self._running:
+		    self._create_threads()
+		    self._run()
+                else:
+                    raise Exception("Already running")
 
 	def stop(self):
-		try:
-			if self._running:
-				self._stop()
-		except Exception as e:
-			print(str(e))
+		if self._running:
+			self._stop()
+		else:
+                        raise Exception ("Can't stop a non running threads")
