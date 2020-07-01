@@ -7,7 +7,6 @@ Increase your posts views easily with this bot.
 python3 telegram.py
 
 # Setup
-
+pip install colorama
 pip install requests
-
 pip install -U requests[socks]
