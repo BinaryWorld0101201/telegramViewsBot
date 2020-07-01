@@ -6,6 +6,9 @@ import threading
 import requests
 import re
 import sys
+import colorama
+
+colorama.init()
 
 # colors
 read 	= "\033[31m"
